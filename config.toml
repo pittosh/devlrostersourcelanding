@@ -21,6 +21,7 @@ button1url = "/under_contructruction"
 button2 = "Get Started"
 button2url = "/architecture"
 githubtext = "View on GitHub"
+refer = "https://rostersource.github.io/"
 githuburl = "https://github.com/rosterSource"
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
   subtitle = "Build a beautiful and simple website in minutes"
