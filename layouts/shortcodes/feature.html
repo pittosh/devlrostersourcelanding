@@ -1,0 +1,10 @@
+    
+{{ $type := .Get "type" }}   
+
+ {{ range .Site.Pages }}
+ {{ if eq .Type $type }}
+    <div class="feature">
+ 	       {{.Content}}
+    </div>
+  {{end}}
+  {{end}}
