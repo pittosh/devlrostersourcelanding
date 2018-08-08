@@ -634,7 +634,7 @@ footer .copyright {
 }
 
  .blog-post img{max-width: 1024px;}
- .error{color:#FF0000; font-size:15px;}
+ .error{color:#FF0000; font-size:13px;padding:3px;}
 
  a.navbar-brand{
   padding: 0 !important;
