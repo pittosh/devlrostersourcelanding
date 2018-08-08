@@ -153,12 +153,17 @@ document.addEventListener('DOMContentLoaded', main.init);
 
 $(document).ready(function(){
   $('#submit').on('click', function(e){
+
          
-         var first_name = $('#name').val();
-         var email = $('#businessemail').val();
-       var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+          var first_name = $('#name').val();
+          var lname = $('#secondname').val();
+          var email = $('#emailid').val();
+          var institution = $('#institution').val();
+          var phonenumber = $('#phonenumber').val();
+          var job = $('#job').val();
+         var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
            if (first_name == '') {
-        $('#fname').css('display', 'block');
+          $('#fname').css('display', 'block');
             return  false;
             e.preventDefault();
          }
@@ -167,41 +172,103 @@ $(document).ready(function(){
             return  false;
              e.preventDefault();
          }
+
+         
+
+
+          if (lname == '') {
+        $('#lastname').css('display', 'block');
+            return  false;
+            e.preventDefault();
+         }
+
+            if (institution == '') {
+        $('#error-institution').css('display', 'block');
+            return  false;
+            e.preventDefault();
+         }
+
+              if (phonenumber == '') {
+        $('#error-phone').css('display', 'block');
+            return  false;
+            e.preventDefault();
+         }
+
+         if (job == '') {
+        $('#error-job').css('display', 'block');
+            return  false;
+            e.preventDefault();
+         }
+
+
          if(first_name != ''){
             $('#fname').css('display', 'none');
             return  true;  
        }
+        if(lname != ''){
+            $('#lastname').css('display', 'none');
+            return  true;  
+       }
+
+       if(institution != ''){
+            $('#error-institution').css('display', 'none');
+            return  true;  
+       }
+
+        if(phonenumber != ''){
+            $('#error-phone').css('display', 'none');
+            return  true;  
+       }
+
        if(email != ''){
             $('#emailaddress').css('display', 'none');
             return  true;  
     }
 
+
+     if(job != ''){
+            $('#error-job').css('display', 'none');
+            return  true;  
+       }
+
     });
   $('#submitbtn').on('click', function(e){
-         
-         //var first_name = $('#name').val();
+         var modalname = $('#modalname').val();
          var email = $('#businessemail').val();
+         var modalcomments = $('#comment').val();
        var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-           /*if (first_name == '') {
-        $('#fname').css('display', 'block');
+           if (modalname == '') {
+        $('#errorname').css('display', 'block');
             return  false;
             e.preventDefault();
-         }*/
+         } 
          if (email == '' || email.search(o) == -1 ) {
             $('#email').css('display', 'block');
             return  false;
              e.preventDefault();
          }
-         /*if(first_name != ''){
-            $('#fname').css('display', 'none');
+          if (modalcomments == '') {
+        $('#error-comments').css('display', 'block');
+            return  false;
+            e.preventDefault();
+         } 
+         if(modalname != ''){
+            $('#errorname').css('display', 'none');
             return  true;  
-       }*/
+       }
        if(email != ''){
             $('#email').css('display', 'none');
             return  true;  
     }
+     if(modalcomments != ''){
+            $('#error-comments').css('display', 'none');
+            return  true;  
+       }
 
     });
+
+
+
 
 });
 

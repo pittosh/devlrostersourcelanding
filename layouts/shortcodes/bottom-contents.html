@@ -9,15 +9,16 @@
         <h4 class="main-title">Question or Comments</h4>
       </div>
       <div class="modal-body comments-modal">
-            <form class="" action="https://formspree.io/gunjan.siroya@netspective.com" method="POST">
-                        
+            <form class="" action="https://formspree.io/vinod.g@citrusinformatics.com" method="POST">
+                       
                         <div class="form-group">
-                             
+                         
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="name" id="name"  placeholder="Name"/>
+                                    <input type="text" class="form-control" name="Name" id="modalname"  placeholder="Name"/>
                                 </div>
+                                 <span  class="error" id="errorname" style="display:none">Enter name</span>
                             </div>
                         </div>
 
@@ -26,9 +27,9 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="businessemail" id="businessemail"  placeholder="Email"/>
+                                    <input type="text" class="form-control" name="Email" id="businessemail"  placeholder="Email"/>
                                 </div>
-                                <span  class="error" id="email" style="display:none">The field Required.</span>
+                                <span  class="error" id="email" style="display:none">Enter a valid email</span>
                             </div>
                         </div>
 
@@ -37,8 +38,9 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
-                                    <textarea maxlength="250" class="form-control" rows="5" id="comment"></textarea>
+                                    <textarea name = "Comments" maxlength="250" class="form-control" rows="5" id="comment"></textarea>
                                 </div>
+                                <span  class="error" id="error-comments" style="display:none">Please add comments</span>
                             </div>
                         </div>
 

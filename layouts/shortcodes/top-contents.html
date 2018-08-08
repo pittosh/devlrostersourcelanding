@@ -14,17 +14,17 @@
         <div class="image-sec col-sm-4 demo-form">
 
         	<p>Ask a demonstration of RosterSource platform or to join the RosterSource Community.</p>
-            		<form class="" action="https://formspree.io/gunjan.siroya@netspective.com" method="POST">
+            		<form id = "mainform" class="" action="https://formspree.io/vinod.g@citrusinformatics.com" method="POST">
 						
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">First Name</label>
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  />
+									<input type="text" class="form-control" name="First name" id="name"  />
 									
 								</div>
-								<span  class="error" id="fname" style="display:none">The field Required.</span>
+								<span  class="error" id="fname" style="display:none">Enter first name</span>
 							</div>
 						</div>
 
@@ -33,8 +33,9 @@
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="lname" id="lname"  />
+									<input type="text" class="form-control" name="Last name" id="secondname"  />
 								</div>
+								<span  class="error" id="lastname" style="display:none">Enter last name</span>
 							</div>
 						</div>
 
@@ -43,8 +44,9 @@
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  />
+									<input type="text" class="form-control" name="Institution" id="institution"  />
 								</div>
+								<span  class="error" id="error-institution" style="display:none">Enter institution</span>
 							</div>
 						</div>
 
@@ -53,10 +55,10 @@
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="email" class="form-control" name="emailid" id="emailid"/>
+									<input type="email" class="form-control" name="Email" id="emailid"/>
 									
 								</div>
-								 <span  class="error" id="emailaddress" style="display:none">The field Required.</span>
+								 <span  class="error" id="emailaddress" style="display:none">Enter a valid email</span>
 							</div>
 						</div>
 
@@ -65,8 +67,9 @@
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="phone" id="phone"/>
+									<input type="number" class="form-control"  name="Phone" id="phonenumber"/>
 								</div>
+								<span  class="error" id="error-phone" style="display:none">Enter a valid contact number</span>
 							</div>
 						</div>
 
@@ -75,8 +78,10 @@
 							<div class="">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="jobtitle" id="jobtitle"/>
+									<input type="text" class="form-control" name="Jobtitle" id="job"/>
 								</div>
+
+								<span  class="error" id="error-job" style="display:none">Enter job title</span>
 							</div>
 						</div>
 
