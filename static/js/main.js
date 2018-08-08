@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', main.init);
 
 $(document).ready(function(){
   $('#submit').on('click', function(e){
-         e.preventDefault();
+         
          var first_name = $('#name').val();
          var email = $('#businessemail').val();
        var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
@@ -178,7 +178,7 @@ $(document).ready(function(){
 
     });
   $('#submitbtn').on('click', function(e){
-         e.preventDefault();
+         
          //var first_name = $('#name').val();
          var email = $('#businessemail').val();
        var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
