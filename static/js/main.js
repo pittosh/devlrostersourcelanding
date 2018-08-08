@@ -161,20 +161,30 @@ $(document).ready(function(){
           var institution = $('#institution').val();
           var phonenumber = $('#phonenumber').val();
           var job = $('#job').val();
-         var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+          var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+            $('#name').keyup(function() {
+             $('#fname').hide();
+             });
            if (first_name == '') {
           $('#fname').css('display', 'block');
             return  false;
             e.preventDefault();
          }
+
+          $('#emailid').keyup(function() {
+              $('#emailaddress').hide();
+             });
+
          if (email == '' || email.search(o) == -1 ) {
             $('#emailaddress').css('display', 'block');
             return  false;
              e.preventDefault();
          }
-
          
-
+             $('#secondname').keyup(function() {
+              $('#lastname').hide();
+             });
+            
 
           if (lname == '') {
         $('#lastname').css('display', 'block');
@@ -182,17 +192,30 @@ $(document).ready(function(){
             e.preventDefault();
          }
 
+            $('#institution').keyup(function() {
+             $('#error-institution').hide();
+             });
+
             if (institution == '') {
         $('#error-institution').css('display', 'block');
             return  false;
             e.preventDefault();
          }
 
+
+           $('#phonenumber').keyup(function() {
+              $('#error-phone').hide();
+             });
+
               if (phonenumber == '') {
         $('#error-phone').css('display', 'block');
             return  false;
             e.preventDefault();
          }
+         
+         $('#job').keyup(function() {
+              $('#error-job').hide();
+             });
 
          if (job == '') {
         $('#error-job').css('display', 'block');
@@ -237,16 +260,25 @@ $(document).ready(function(){
          var email = $('#businessemail').val();
          var modalcomments = $('#comment').val();
        var o = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+        $('#modalname').keyup(function() {
+              $('#errorname').hide();
+             });
            if (modalname == '') {
         $('#errorname').css('display', 'block');
             return  false;
             e.preventDefault();
          } 
+          $('#businessemail').keyup(function() {
+              $('#email').hide();
+             });
          if (email == '' || email.search(o) == -1 ) {
             $('#email').css('display', 'block');
             return  false;
              e.preventDefault();
          }
+          $('#comment').keyup(function() {
+              $('#error-comments').hide();
+             });
           if (modalcomments == '') {
         $('#error-comments').css('display', 'block');
             return  false;
