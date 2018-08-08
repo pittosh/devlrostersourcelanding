@@ -146,29 +146,32 @@ display: inline-block;
 	vertical-align: middle;
   display: inline-block;
 	text-align:left;
-	padding-left: 25px;
+	padding-right: 75px;
 }
 .image-sec label{
   font-size: 13px;
+  font-weight: 400!important;
 }
 .image-sec .form-group{
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 .main-title{
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 34px; /* edited */
+  /* font-weight: bold; */
   color: #7e463b;
   font-family: 'Roboto', sans-serif;
 }
 .demo-form{
   background: #efefef;
+  padding: 35px;
 }
 .demo-form p{
   margin-top: 0;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #494d57;
   margin-bottom: 5px;
   text-align: left !important;
+  font-size:18px!important;
 }
 .comment-btn:hover {
     background-color: #63362e;
@@ -181,10 +184,11 @@ display: inline-block;
     color: #fff;
     }
 .roster-centercontent p{
-  font-size: 16px;
+  font-size: 15px; /* edited */
   font-family: 'Roboto', sans-serif;
   text-align: justify;
   padding-right: 10px;
+  line-height: 23px; /* added */
 }
 .diagrom-img-sec {
 	width:100%;
@@ -196,6 +200,8 @@ display: inline-block;
   color: #fff;
   font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0px;
 }
 .comments-modal{
   padding-bottom: 0 !important;
@@ -321,12 +327,13 @@ display: inline-block;
 /* --- Footer --- */
 
 footer {
-  padding: 7px 0 !important;
+  padding: 10px 0 15px 0px !important;
   background: #252525;
   border-top: 1px #EAEAEA solid;
   font-size: 14px;
   color: #eee;
   text-align: center;
+  margin-top: 30px;
 }
 
 footer a {
@@ -546,16 +553,18 @@ pre code {
   padding: 0;
   border-radius: 3px;
 }
-.header-section{
+.header-section{ 
   text-align: center;
-  margin-top: 30px;
+  margin-top: 94px; /* edited */
   margin-bottom: 50px;
-  background: #fff url('/img/cover-image.jpg') no-repeat center center;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  background: #fff url('../img/cover-image.jpg') no-repeat top center; /* edited */
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 900px; /* added */
 }
 .page-heading,
 .home-heading{
-  padding:250px 0px;
+  padding-top:140px;
+  padding-bottom:0px;
   text-align: left;
   width: 50%;
 }
@@ -569,10 +578,12 @@ pre code {
 }
 .comment-btn{
   background-color: #7f463b;
-  width: 250px;
-  color: #fff;
-  font-size: 14px;
+    width: 250px;
+    color: #fff;
+    font-size: 19px;
     font-weight: bold;
+    padding: 10px 20px;
+    margin-top:25px;  
 }
 .home-heading h1{
   font-size: 72px;
@@ -580,7 +591,7 @@ pre code {
 }
 .page-subheading{
   color: #41464d;
-  font-size: 22px;
+  font-size: 27px;
   text-shadow: 0px 0px 0px black;
   margin-top: 25px;
   font-family: 'Roboto Slab', serif;
@@ -596,14 +607,14 @@ pre code {
   color: #efcd17;
 }
 .foot-title{
-  font-size: 12px;
+  font-size: 15px;
     color: #656565;
 }
 footer .copyright {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: -5px;
   color: #fff;
   font-size: 12px;
 }
@@ -636,6 +647,147 @@ footer .copyright {
  .navbar-custom .navbar-brand{
   height: 60px !important;
  }
- .navbar-custom{
-
+ .navbar-custom {
  }
+
+ /* ~ ~ ~ Extra styles starts 08/08/18 ~ ~ ~ */
+.page-subheading strong {
+  font-size:32px;
+}
+
+/* Media Queries */
+@media (max-width:1440px) {
+  .header-section {
+        min-height: 680px;
+  }
+  .page-heading, .home-heading {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 1279px) {
+ .page-heading, .home-heading {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  } 
+.header-section {
+    min-height: 600px;
+  }
+}
+@media (max-width: 1200px) {
+ .page-heading, .home-heading {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    width:55%;
+  } 
+.header-section {
+    min-height: 565px;
+  }
+}
+@media (max-width: 1199px) {
+ .page-heading, .home-heading {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  } 
+.header-section {
+    min-height: 565px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-section {
+    min-height: 470px;
+  }
+  .page-subheading {
+    font-size: 17px;
+  }
+  .page-subheading strong {
+    font-size: 25px;
+  }
+  .page-heading, .home-heading {
+    padding-left:0px;
+
+  }
+  .demo-form {
+    margin-top:45px;
+  }
+  .content-sec {
+    padding-right:0px;
+    padding-left:0px;
+  } 
+}
+@media (max-width: 800px) {
+  .header-section {
+   min-height: 370px;
+  }
+  .page-heading, .home-heading {
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+  .header-section {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .content-sec {
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+
+}
+@media (max-width: 767px) {
+  .navbar-custom {
+    min-height: 95px;
+  }
+  a.navbar-brand img {
+    height: 80px;
+    margin-top: -1px;
+    margin-left: 10px;
+  }
+  .main-title {
+    text-align:left;
+  }
+  .navbar-default .navbar-toggle {
+    display:none;
+  }
+  footer {
+    margin-top: -15px;
+  }
+}
+@media (max-width: 600px) {
+  .page-heading, .home-heading {
+    width: 65%;
+  }
+  .page-subheading {
+    font-size: 16px;
+  }
+  .page-subheading strong {
+    font-size: 18px;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  .page-heading, .home-heading {
+    width: 75%;
+}
+@media (max-width: 375px) {
+  .page-heading, .home-heading {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .page-heading, .home-heading {
+    width: 92%;
+    padding-top: 18px;
+  }
+  a.navbar-brand img {
+      height: 70px;
+  }
+}
+
+
+/* Media Queries ends */
+
+  /* ~ ~ ~ Extra styles ends ~ ~ ~ */
