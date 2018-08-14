@@ -49,9 +49,8 @@
             <div class="{{ .Type }}-heading">   
               {{ if eq .Type "home" }}
                 <h1>
-                  <span class="col-roster">{{ .Site.Params.title1 }}</span>
-                  <span class="col-net">{{ .Site.Params.title2 }}</span>
-                </h1>              
+                  <span class="col-roster">{{ .Site.Params.title1 }}</span><span class="col-net">{{ .Site.Params.title2 }}</span>
+                  </h1>              
 
                 {{ if $subtitle }}
                   {{ if eq .Type "page" }}
